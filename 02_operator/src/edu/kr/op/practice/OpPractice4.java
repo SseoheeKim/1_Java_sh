@@ -17,7 +17,7 @@ public class OpPractice4 {
 		
 		int totalSum = kor+eng+math;
 		double avg = totalSum / 3.0;
-		String result = kor >= 40 && eng >=40 && math >=40 || avg >= 60? "합격":"불합격";
+		String result = kor >= 40 && eng >=40 && math >=40 && avg >= 60? "합격":"불합격";
 				
 		System.out.printf("합계 : %d\n", totalSum);
 		System.out.printf("평균 : %.1f\n", avg);
