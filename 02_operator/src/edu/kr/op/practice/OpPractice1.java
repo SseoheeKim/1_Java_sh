@@ -13,6 +13,8 @@ public class OpPractice1 {
 		
 		System.out.println("1인당 사탕 개수 : " + (candy/per));
 		System.out.println("남은 사탕 개수 : " + (candy%per));
+		
+		sc.close();
 	}
 
 }

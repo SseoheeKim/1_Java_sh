@@ -29,6 +29,8 @@ public class OpPractice2 {
 		System.out.printf("%d학년 %d반 %d번 %s %s의 성적은 %.2f점 입니다.\n ",
 						grade, Class, number, name, gender, score);
 		
+		sc.close();
+		
 	}
 
 }
