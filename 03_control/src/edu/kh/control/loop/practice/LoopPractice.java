@@ -3,6 +3,7 @@ package edu.kh.control.loop.practice;
 import java.util.Scanner;
 
 public class LoopPractice {
+//9,11,12번
 	
 	public void practice1() {
 		Scanner sc = new Scanner(System.in);
@@ -79,20 +80,37 @@ public class LoopPractice {
 			}
 		}
 		
-		/* [다른 풀이]
-		 if(num1<1 || num2<1) {
-			System.out.println("1이상의 수를 입력해주세요.");
-	     } else if (num1>num2) {
-			for(int i=num2; i<=num1; i++) {
-				System.out.print(i+ " ");
-			}
-		 } else if (num1<num2) {
-			for(int i=num1; i<=num2; i++) {
-				System.out.print(i+ " ");
-			}
-		 }
-		 */
 		
+//		// [풀이] 두 변수의 값을 교환
+//		 if(num1<1 || num2<1) {
+//			System.out.println("1이상의 수를 입력해주세요.");
+//	     } else {
+//	    	if(num1>num2) { 
+//	    		int temp = num1;
+//	    		num1 = num2;
+//	    		num2 = temp;
+//	    	}
+//	    	
+//	    	for(int i=num1; i<=num2; i++) {
+//	    		System.out.print(i + " ");
+//	    	}
+//	     }
+//	    	 
+	    	 
+	    	 
+//	    	 [풀이2] 새로운 변수 사용
+//	    	 int start = num1;
+//	    	 int end = num2;
+//	    	 
+//	    	 if(num1>num2) {
+//	    		 start = num2;
+//	    		 end = num1;
+//	    	 }
+//	    	 
+//	    	 for(int i = start; i <= end; i++) {
+//	    		 System.out.print(i + " ");
+//	    	 }
+//	     }
 	}
 	
 	
@@ -126,6 +144,20 @@ public class LoopPractice {
 				}
 			}
 		}
+		
+		
+//		[ 풀이 ]
+//		if(2>=dan && dan <=9) {
+//			for(int j=dan; j<=9; j++) {
+//				System.out.println("========" +j+ "단=========");
+//				for(int i=1; i<=9; i++) {
+//					System.out.printf("%d x %d = %d\n", j, i, j*i);
+//				}
+//				System.out.println();
+//			}
+//		} else {
+//			System.out.println("2~9사이의 숫자만 입력해주세요.");
+//		}
 	}
 	
 	
@@ -159,8 +191,44 @@ public class LoopPractice {
 	}
 	
 	
-	public void practice9() {
 	
+	public void practice9() {
+		// 문제 9번
+		// 정수 입력 : 4
+		//    *
+		//   **
+		//  ***
+		// ****
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("정수 입력 : ");
+		int input = sc.nextInt();
+		
+		// [ if문 이용 ]
+		for(int row=1; row <= input; row++) {
+			for(int col=1; col<=input; col++) {
+				
+				if(col <= input - row) {
+					System.out.print(" ");
+				} else {
+					System.out.print("*");
+				}
+			}
+			System.out.println();
+		}
+		
+			
+		// [ for문 이용 ]
+//		for(int row=1; row <= input; row++) {
+//			for(int i=input-1; i>=row; i--) {
+//				System.out.print(" ");
+//			}
+//			for(int col=1; col<=row; col++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+		
 	}
 	
 	
@@ -175,9 +243,44 @@ public class LoopPractice {
 				System.out.print("*");
 			}
 			System.out.println();
-		} // for문의 조건이 끝나면 탈출할텐데 이중for문이 가능한가?
+		} 
 		for (int i=input-1; i>=1; i--) {
 			for (int j=i; j>=1; j--) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		
+		// for문의 조건이 끝나면 탈출할텐데 이중for문이 가능한가?
+		
+//		for(int row=1; row<=input*2-1; row++) {
+//						// 총 출력될 행의 수
+//			if(row<input) {
+//				for(int col=1; col<=row; col++) {
+//					System.out.print("*");
+//				}
+//			} else {
+//				for(int col=input; col>row-input; col--) {
+//					System.out.print("*");
+//				}
+//			}
+//		}
+//		System.out.println();
+	}
+	
+	
+	
+	public void practice11() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("정수 입력 : ");
+		int input = sc.nextInt();
+		
+		for(int row=1; row <= input; row++) {
+			for(int i=input-1; i>=row; i--) {
+				System.out.print(" ");
+			}
+			for(int col=1; col<=row*2-1; col++) {
 				System.out.print("*");
 			}
 			System.out.println();
@@ -185,16 +288,21 @@ public class LoopPractice {
 	}
 	
 	
-	
-	public void practice11() {
-		
-		
-	}
-	
-	
 	public void practice12() {
-
+		Scanner sc = new Scanner(System.in);
+		System.out.print("정수 입력 : ");
+		int input = sc.nextInt();
 		
+		for(int row=1; row<=input;row++) {
+			for(int col=1; col<=input; col++) {
+				if(row==input||col==input||row==1||col==1) {
+					System.out.print("*");
+				} else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
 	}
 	
 	
