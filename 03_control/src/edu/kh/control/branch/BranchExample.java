@@ -196,10 +196,14 @@ public class BranchExample {
 			int ran = (int)(Math.random()*3);
 			String com = null; //String의 기본값 // null : 빈 값
 			
+			// String s1 = null; -> 참조X
+			// String s2 = ""; -> 비어있는 문자열
+		
 			switch(ran) {
 			case 0: com="가위"; break;
 			case 1: com="바위"; break;
 			case 2: com="보"; break;
+			// switch문의 default 생략가능
 			}
 			System.out.printf("컴퓨터는 [%s]를 선택했습니다.\n", com);
 			
