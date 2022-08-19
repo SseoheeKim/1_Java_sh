@@ -1,5 +1,6 @@
 package edu.kh.oop.constructor;
 import edu.kh.oop.constructor.model.vo.Member;
+import edu.kh.oop.field.model.vo.Temp;
 public class ConstructorRun {
 
 	public static void main(String[] args) {
@@ -18,6 +19,14 @@ public class ConstructorRun {
 		
 		Member member6 = new Member("91shuuuu","pass1212","010-1234-5678",30);
 		Member member7 = new Member("dayday","pass12!","010-8765-4321",32);
+		
+		
+		
+		Temp t1 = new Temp();
+					// 사용자가 직접 생성하지 않아도 기본생성자 Temp() 존재
+		// 생성자가 하나도 없으면, 컴파일러가 기본 생성자를 추가
+		
+		
 		
 		System.out.println("프로그램 종료");
 	}
