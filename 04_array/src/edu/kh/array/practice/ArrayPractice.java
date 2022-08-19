@@ -305,7 +305,52 @@ public class ArrayPractice {
 		int arrSize = sc.nextInt();
 		
 		String[] strArr = new String[arrSize];
+		
+		for(int i=0; i<strArr.length;i++) {
+			System.out.print((i+1)+"번째 문자열 : \n");
+			strArr[i] = sc.next();
+			
+		}
 	}
 	
+	public void practice15() {
+		String[][] strArr = new String[3][3];
+		
+		for(int i=0; i<strArr.length; i++) {
+			for(int j=0; j<strArr[i].length; j++) {
+				System.out.printf("(%d, %d)", i, j);
+			}
+			System.out.println();
+		}
+	}
+	
+	public void practice16() {
+		int[][] intArr = new int[4][4];
+		
+		for(int i=0; i<intArr.length; i++) {
+			for(int j=0; j<intArr[i].length; j++) {
+				System.out.printf("%3d", j+1);
+			}
+			
+			System.out.println();
+		}
+	}
+	
+	public void practice17() {
+		
+	}
+	public void practice18() {
+		int[][] intArr = new int[4][4];
+		
+		for(int i=0; i<intArr.length; i++) {
+			for(int j=0; j<intArr[i].length; j++) {
+				int ran = (int)(Math.random()*10 +1);
+				intArr[i][j] = ran;
+				System.out.print(intArr[i][j]+" ");
+			}
+			System.out.println();
+		}
+		
+	}
 	
 }
