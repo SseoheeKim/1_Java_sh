@@ -12,14 +12,14 @@ public class ArrayPracticeRun {
 //		ap.practice6();
 //		ap.practice7();
 //		ap.practice8();
-//		ap.practice9();
-//		ap.practice10();
-//		ap.practice11();
+//		ap.practice9(); // 배열마다 난수 발생
+//		ap.practice10(); // 위의 문제에서 중복제거
+//		ap.practice11(); // 중복제거 + 최소값, 최대값 구하기
 //		ap.practice12();
 //		ap.practice13();
-//		ap.practice14();
+		ap.practice14();
 //		ap.practice15();
-		ap.practice16();
+//		ap.practice16();
 //		ap.practice17();
 //		ap.practice18();
 		
