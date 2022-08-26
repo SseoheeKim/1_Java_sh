@@ -1,6 +1,7 @@
 package edu.kh.collection.model.service;
 
 import java.util.ArrayList;
+
 import edu.kh.collection.model.vo.Student;
 
 public class ListService {
@@ -28,12 +29,15 @@ public class ListService {
 		ArrayList list = new ArrayList(3);	// 설정가능하므로 3칸 생성
 		
 		// 추가 
-		// add(E e) : 리스트의 마지막 위치에 객체 추가
-		list.add(new Object());
-		list.add(new Student());
-		list.add(new String());
-		// ArrayList의 크기 3을 초과해서 추가
+		// public boolean add(E e) : 리스트의 마지막 위치에 객체 추가
+		list.add(new Object()); // Object객체 추가
+		list.add(new Student()); // Student객체 추가
+		list.add(new String()); // String객체 추가
+		// 여러 타입의 객체 저장이 가능!!
+		
+		// ArrayList의 크기 3을 초과해서 추가 
 		list.add(new String("초과")); // 크기가 자동으로 변해서 4칸
+		// 크기 제약 없다!!!
 		
 		
 		// 삽입
