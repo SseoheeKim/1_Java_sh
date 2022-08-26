@@ -18,11 +18,10 @@ public class Example {
 		
 		// Scanner와 유사한 객체(속도는 빠름)
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.print("입력 : ");
-		
-		
+		System.out.print("입력 : ");	
 		// String input = br.readLine(); // sc.nextLine();과 같은 구문
 		// 빨간줄로 Unhandled exception type IOException 에러 발생
+		
 		// public String readLine() 
 		//			throws IOException
 		// -> readLine()메서드는 IOException을 던질 가능성이 있기 때문에 호출 시 반드시 예외처리!
@@ -140,6 +139,7 @@ public class Example {
 	public void ex5() throws IOException {
 		ex6(); // throw new IOException();
 	}
+	
 	
 	public void ex6() throws IOException {
 					// 해당 메서드에서 발생하는 IOException을 
